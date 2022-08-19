@@ -1,4 +1,4 @@
-package dh.apps.messageforward.ui.theme
+package dh.apps.resource
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

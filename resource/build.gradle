@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
@@ -7,16 +7,11 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "dh.apps.messageforward"
         minSdk 26
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -29,34 +24,18 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = '11'
-    }
+
     buildFeatures {
         compose true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion compose
-    }
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
-        }
+
+    kotlinOptions {
+        jvmTarget = '11'
     }
 }
 
 dependencies {
-
-    implementation project(':resource')
-
     implementation 'androidx.core:core-ktx:1.8.0'
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_runtime_ktx"
-
-    // Compose
     implementation "androidx.compose.ui:ui:$compose"
-    implementation "androidx.compose.ui:ui-tooling-preview:$compose"
     implementation "androidx.compose.material3:material3:$material3"
-    implementation "androidx.activity:activity-compose:$activity_compose"
-
-
 }
