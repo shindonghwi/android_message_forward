@@ -1,4 +1,3 @@
-@file:OptIn(ExperimentalUnitApi::class)
 
 package dh.apps.resource
 
@@ -28,6 +27,7 @@ val Roboto = FontFamily(
     Font(R.font.roboto_black, FontWeight.W900),
 )
 
+@OptIn(ExperimentalUnitApi::class)
 val RobotoTypography = Typography(
 
     displayLarge = TextStyle(
