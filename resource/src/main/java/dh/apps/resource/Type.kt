@@ -21,16 +21,11 @@ import androidx.compose.ui.unit.sp
 
 val Roboto = FontFamily(
     Font(R.font.roboto_thin, FontWeight.W100),
-    Font(R.font.roboto_thin_italic, FontWeight.W100),
     Font(R.font.roboto_light, FontWeight.W300),
-    Font(R.font.roboto_light_italic, FontWeight.W300),
     Font(R.font.roboto_regular, FontWeight.W400),
     Font(R.font.roboto_medium, FontWeight.W500),
-    Font(R.font.roboto_medium_italic, FontWeight.W500),
     Font(R.font.roboto_bold, FontWeight.W700),
-    Font(R.font.roboto_bold_italic, FontWeight.W700),
     Font(R.font.roboto_black, FontWeight.W900),
-    Font(R.font.roboto_black_italic, FontWeight.W900),
 )
 
 val RobotoTypography = Typography(
