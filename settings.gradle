@@ -16,3 +16,4 @@ rootProject.name = "Android_MessageForward"
 include ':presentation'
 include ':resource'
 include ':data'
+include ':domain'
