@@ -1,21 +1,25 @@
 buildscript {
     ext {
+        kotlinVersion = "1.5.31"
 
         // Compose
-        compose = '1.0.5'
+        compose = '1.1.0-beta01'
         material3 = '1.0.0-alpha01'
         compose_activity = '1.5.1'
 
         // AndroidX
         lifecycle_runtime_ktx = '2.5.1'
         activity_compose = '1.5.1'
+    }
 
+    dependencies {
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.38.1'
     }
 }
 plugins {
-    id 'com.android.application' version '7.2.0' apply false
-    id 'com.android.library' version '7.2.0' apply false
-    id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.5.31' apply false
 }
 
 task clean(type: Delete) {
